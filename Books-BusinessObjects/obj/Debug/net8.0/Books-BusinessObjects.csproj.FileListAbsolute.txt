@@ -1,0 +1,11 @@
+C:\Projetos\Books-APIGateway\Books-BusinessObjects\bin\Debug\net8.0\Books-BusinessObjects.deps.json
+C:\Projetos\Books-APIGateway\Books-BusinessObjects\bin\Debug\net8.0\Books-BusinessObjects.dll
+C:\Projetos\Books-APIGateway\Books-BusinessObjects\bin\Debug\net8.0\Books-BusinessObjects.pdb
+C:\Projetos\Books-APIGateway\Books-BusinessObjects\obj\Debug\net8.0\Books-BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Books-APIGateway\Books-BusinessObjects\obj\Debug\net8.0\Books-BusinessObjects.AssemblyInfoInputs.cache
+C:\Projetos\Books-APIGateway\Books-BusinessObjects\obj\Debug\net8.0\Books-BusinessObjects.AssemblyInfo.cs
+C:\Projetos\Books-APIGateway\Books-BusinessObjects\obj\Debug\net8.0\Books-BusinessObjects.csproj.CoreCompileInputs.cache
+C:\Projetos\Books-APIGateway\Books-BusinessObjects\obj\Debug\net8.0\Books-BusinessObjects.dll
+C:\Projetos\Books-APIGateway\Books-BusinessObjects\obj\Debug\net8.0\refint\Books-BusinessObjects.dll
+C:\Projetos\Books-APIGateway\Books-BusinessObjects\obj\Debug\net8.0\Books-BusinessObjects.pdb
+C:\Projetos\Books-APIGateway\Books-BusinessObjects\obj\Debug\net8.0\ref\Books-BusinessObjects.dll

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "obubSaTcaErWJeCC5KG8JUUhjed6EHmw9feJp0fcDBM=",
+  "Source": "BooksService",
+  "BasePath": "_content/BooksService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
