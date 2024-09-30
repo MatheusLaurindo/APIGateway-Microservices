@@ -10,7 +10,7 @@
           "Port": 5235
         }
       ],
-      "UpstreamPathTemplate": "/api-gateway/books/{everything}",
+      "UpstreamPathTemplate": "/gateway/books/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
     },
     // orders microservice routing
@@ -23,7 +23,7 @@
           "Port": 5053
         }
       ],
-      "UpstreamPathTemplate": "/api-gateway/orders/{everything}",
+      "UpstreamPathTemplate": "/gateway/orders/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
     }
   ],

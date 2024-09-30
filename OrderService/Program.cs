@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using OrderService.Infraestructure;
+using OrderService.Interface;
+using OrderService.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<OrderDbContext>(opt => opt.UseSqlServer("Server=MATHEUS\\SQLEXPRESS;DataBase=Orders;Trusted_Connection=True;TrustServerCertificate=True;"));
+builder.Services.AddSingleton<BookRepository>();
 
 var app = builder.Build();
 

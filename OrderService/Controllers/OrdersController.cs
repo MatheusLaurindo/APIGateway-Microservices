@@ -2,6 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Books_BusinessObjects.Model;
 using OrderService.Infraestructure;
+using OrderService.Interface;
+using OrderService.Repository;
+using OrderService.DTOs;
 
 namespace OrderService.Controllers
 {
@@ -10,29 +13,56 @@ namespace OrderService.Controllers
     public class OrdersController : ControllerBase
     {
         private readonly OrderDbContext _context;
+        private readonly BookRepository _repository;
 
-        public OrdersController(OrderDbContext context)
+        public OrdersController(OrderDbContext context, BookRepository repository)
         {
             _context = context;
+            _repository = repository;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Order>>> GetOrders()
+        public async Task<ActionResult<List<OrderDTO>>> GetOrders()
         {
-            return await _context.Orders.ToListAsync();
+            var orders = await _context.Orders.ToListAsync();
+
+            var booksFromOrder = await _repository.GetAllBooksAsync();
+
+            return orders
+                .Select(order =>
+                {
+                    var book = booksFromOrder.FirstOrDefault(b => b.Id == order.BookId);
+
+                    return new OrderDTO
+                    {
+                        Id = order.Id,
+                        Book = book,
+                        Quantity = order.Quantity,   
+                        Price = order.Price,
+                    };
+                })
+                .ToList();
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Order>> GetOrder(int id)
+        public async Task<ActionResult<OrderDTO>> GetOrder(int id)
         {
-            var order = await _context.Orders.FindAsync(id);
+            var order = await _context.Orders.FirstOrDefaultAsync(x => x.Id == id);
+
+            var bookFromOrder = await _repository.GetBookAsync(order.BookId);
 
             if (order == null)
             {
                 return NotFound();
             }
 
-            return order;
+            return new OrderDTO
+            {
+                Id = order.Id,
+                Book = bookFromOrder,
+                Quantity = order.Quantity,
+                Price = order.Price
+            };
         }
 
         [HttpPut("{id}")]
