@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksService", "BooksServic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Books-BusinessObjects", "Books-BusinessObjects\Books-BusinessObjects.csproj", "{BDD1DA07-EC4E-4955-AF59-64F0162C58BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderService", "OrderService\OrderService.csproj", "{EBA4EF8D-6B99-4EAD-AB3C-47E7E37F4BD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,12 +31,17 @@ Global
 		{BDD1DA07-EC4E-4955-AF59-64F0162C58BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDD1DA07-EC4E-4955-AF59-64F0162C58BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDD1DA07-EC4E-4955-AF59-64F0162C58BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBA4EF8D-6B99-4EAD-AB3C-47E7E37F4BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA4EF8D-6B99-4EAD-AB3C-47E7E37F4BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA4EF8D-6B99-4EAD-AB3C-47E7E37F4BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA4EF8D-6B99-4EAD-AB3C-47E7E37F4BD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{56EA5DB5-5071-48AE-9A57-12053252BA2E} = {2CDAC682-AFC2-41DD-B0FE-D777A1ABA658}
+		{EBA4EF8D-6B99-4EAD-AB3C-47E7E37F4BD5} = {2CDAC682-AFC2-41DD-B0FE-D777A1ABA658}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A363513-0C87-457F-92CE-7C9023F406C1}
