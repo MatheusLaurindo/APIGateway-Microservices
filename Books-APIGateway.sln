@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Books-APIGateway", "Books-APIGateway\Books-APIGateway.csproj", "{0D469012-4B53-4F7C-8527-30B895217FCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Books-APIGateway", "Books-APIGateway\Books-APIGateway.csproj", "{0D469012-4B53-4F7C-8527-30B895217FCB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroServices", "MicroServices", "{2CDAC682-AFC2-41DD-B0FE-D777A1ABA658}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksService", "BooksService\BooksService.csproj", "{56EA5DB5-5071-48AE-9A57-12053252BA2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksService", "BooksService\BooksService.csproj", "{56EA5DB5-5071-48AE-9A57-12053252BA2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Books-BusinessObjects", "Books-BusinessObjects\Books-BusinessObjects.csproj", "{BDD1DA07-EC4E-4955-AF59-64F0162C58BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Books-BusinessObjects", "Books-BusinessObjects\Books-BusinessObjects.csproj", "{BDD1DA07-EC4E-4955-AF59-64F0162C58BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderService", "OrderService\OrderService.csproj", "{490E24A2-2681-4C38-A212-395069AA6F2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,12 +31,17 @@ Global
 		{BDD1DA07-EC4E-4955-AF59-64F0162C58BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDD1DA07-EC4E-4955-AF59-64F0162C58BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDD1DA07-EC4E-4955-AF59-64F0162C58BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{490E24A2-2681-4C38-A212-395069AA6F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{490E24A2-2681-4C38-A212-395069AA6F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{490E24A2-2681-4C38-A212-395069AA6F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{490E24A2-2681-4C38-A212-395069AA6F2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{56EA5DB5-5071-48AE-9A57-12053252BA2E} = {2CDAC682-AFC2-41DD-B0FE-D777A1ABA658}
+		{490E24A2-2681-4C38-A212-395069AA6F2D} = {2CDAC682-AFC2-41DD-B0FE-D777A1ABA658}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A363513-0C87-457F-92CE-7C9023F406C1}

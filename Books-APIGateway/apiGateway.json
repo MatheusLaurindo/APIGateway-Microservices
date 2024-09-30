@@ -1,7 +1,7 @@
 {
   "Routes": [
+    // books microservice routing
     {
-      // books microservice routing
       "DownstreamPathTemplate": "/api/books/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -12,6 +12,19 @@
       ],
       "UpstreamPathTemplate": "/api-gateway/books/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    // orders microservice routing
+    {
+      "DownstreamPathTemplate": "/api/orders/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5150
+        }
+      ],
+      "UpstreamPathTemplate": "/api-gateway/books/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
     }
   ],
   "GlobalConfiguration": {
